@@ -36,13 +36,13 @@ public class TrainerDao {
 
             while (rs.next()) {
 
-                Trainer s = new Trainer(
+                Trainer t = new Trainer(
                         rs.getInt("Trainer_ID"),
                         rs.getString("TrFirstName"),
                         rs.getString("TrLastName"),
                         rs.getString("Subject"));
 
-                trainers.add(s);
+                trainers.add(t);
 
             }
         } catch (SQLException ex) {

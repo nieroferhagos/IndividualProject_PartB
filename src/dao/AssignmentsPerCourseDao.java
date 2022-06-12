@@ -115,7 +115,7 @@ public class AssignmentsPerCourseDao {
 
     }
 
-    public void importAssignmentPerCourse() {
+    public void importAssignmentsPerCourse() {
 
         System.out.println("Please enter a valid assignment ID: ");
         int assignment_id = InputScanner.intInput();

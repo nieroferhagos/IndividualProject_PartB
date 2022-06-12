@@ -16,7 +16,7 @@ public class AssignmentsPerCourseMenu {
 
         AssignmentsPerCourseDao apc = new AssignmentsPerCourseDao();
         apc.assignmentsPerCourseValidation();
-        apc.importAssignmentPerCourse();
+        apc.importAssignmentsPerCourse();
         
     }
 }

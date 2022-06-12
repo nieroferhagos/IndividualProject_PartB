@@ -40,7 +40,7 @@ public class TrainersPerCourseDao {
 
             while (rs.next()) {
 
-                TrainersPerCourse stpc = new TrainersPerCourse(
+                TrainersPerCourse trpc = new TrainersPerCourse(
                         rs.getString("TrFirstName"),
                         rs.getString("TrLastName"),
                         rs.getString("CourseTitle"),
@@ -49,7 +49,7 @@ public class TrainersPerCourseDao {
                         rs.getDate("StartDate"),
                         rs.getDate("EndDate"));
 
-                trainerspercourse.add(stpc);
+                trainerspercourse.add(trpc);
 
             }
         } catch (SQLException ex) {
@@ -118,7 +118,7 @@ public class TrainersPerCourseDao {
 
     }
 
-    public void importStudentPerCourse() {
+    public void importTrainerPerCourse() {
 
         System.out.println("Please enter a valid trainer ID: ");
         int trainer_id = InputScanner.intInput();

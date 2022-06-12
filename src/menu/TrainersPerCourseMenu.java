@@ -16,7 +16,7 @@ public class TrainersPerCourseMenu {
     
         TrainersPerCourseDao trpc = new TrainersPerCourseDao();
         trpc.trainerPerCourseValidation();
-        trpc.importStudentPerCourse();
+        trpc.importTrainerPerCourse();
         
     }
 }
